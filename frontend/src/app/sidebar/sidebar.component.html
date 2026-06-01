@@ -1,0 +1,20 @@
+<aside class="sidebar glass">
+  <div class="brand-block">
+    <span class="brand-logo">DD</span>
+    <div>
+      <h2>Driver AI</h2>
+      <p>Realtime Vigilance</p>
+    </div>
+  </div>
+
+  <nav class="menu-list">
+    <a class="menu-item" *ngFor="let item of menuItems" href="#">
+      <span class="material-icons">{{ item.icon }}</span>
+      <span>{{ item.label }}</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="footer-pill">Cybernetic Vision</div>
+  </div>
+</aside>

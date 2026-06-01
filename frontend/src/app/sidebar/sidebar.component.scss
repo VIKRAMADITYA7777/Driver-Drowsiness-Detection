@@ -1,0 +1,82 @@
+.sidebar {
+  width: 280px;
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  background: linear-gradient(180deg, rgba(4,12,27,0.95), rgba(9,18,41,0.97));
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00ffd5 0%, #6b7cff 100%);
+  color: #05060a;
+  font-weight: 800;
+}
+
+.brand-block h2,
+.brand-block p {
+  margin: 0;
+}
+
+.brand-block h2 {
+  font-size: 1.2rem;
+}
+
+.brand-block p {
+  color: #9bb7dc;
+  font-size: 0.85rem;
+}
+
+.menu-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #d8e0ff;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.menu-item:hover {
+  background: rgba(0,255,213,0.08);
+  transform: translateX(6px);
+}
+
+.menu-item .material-icons {
+  font-size: 1.2rem;
+}
+
+.sidebar-footer {
+  text-align: center;
+}
+
+.footer-pill {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: #9bb7dc;
+  font-size: 0.85rem;
+}

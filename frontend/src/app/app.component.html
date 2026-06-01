@@ -1,17 +1,17 @@
 <div class="dashboard-root">
-  <nav class="topbar glass">
-    <div class="brand">DRIVER DROWSINESS</div>
-    <div class="status">Status: <span class="badge">Idle</span></div>
-  </nav>
+  <app-sidebar></app-sidebar>
 
-  <main class="container-fluid p-4">
-    <section class="row">
-      <div class="col-12">
-        <div class="card glass p-4">
-          <h2>Futuristic Dashboard</h2>
-          <p>Realtime monitoring and visualizations will appear here.</p>
-        </div>
+  <div class="page-shell">
+    <nav class="topbar glass">
+      <div class="brand">DRIVER DROWSINESS</div>
+      <div class="status-panel">
+        <span class="status-pill">Online</span>
+        <span class="status-badge">Active</span>
       </div>
-    </section>
-  </main>
+    </nav>
+
+    <main class="content-shell glass">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
 </div>

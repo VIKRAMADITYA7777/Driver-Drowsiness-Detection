@@ -1,0 +1,47 @@
+.canvas-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  border-radius: 24px;
+  overflow: hidden;
+  background: radial-gradient(circle at top, rgba(0,255,213,0.15), transparent 30%),
+    linear-gradient(180deg, rgba(8,24,48,0.95), rgba(4,10,20,0.95));
+}
+
+.canvas-shell canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.visual-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  z-index: 2;
+}
+
+.overlay-item {
+  min-width: 120px;
+  padding: 0.85rem 1rem;
+  border-radius: 16px;
+  background: rgba(1,19,36,0.88);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #c1d8ff;
+}
+
+.overlay-item strong {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.overlay-item.danger {
+  background: rgba(255, 71, 131, 0.16);
+  border-color: rgba(255, 71, 131, 0.35);
+}

@@ -1,0 +1,42 @@
+<section class="dashboard-grid">
+  <div class="summary-panel glass">
+    <div class="panel-header">
+      <div>
+        <p class="eyebrow">FUTURISTIC CONTROL</p>
+        <h1>Driver Vigilance AI</h1>
+      </div>
+      <span class="status-badge">Active</span>
+    </div>
+
+    <div class="metric-row">
+      <div class="metric-card" *ngFor="let card of metricCards" [ngClass]="card.status">
+        <label>{{ card.title }}</label>
+        <strong>{{ card.value }}</strong>
+        <p>{{ card.detail }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="visual-panel glass">
+    <app-visual-three></app-visual-three>
+  </div>
+
+  <div class="action-panel glass">
+    <h2>Live Analytics</h2>
+    <div class="action-row">
+      <div class="stat-box">
+        <span>Latency</span>
+        <strong>18 ms</strong>
+      </div>
+      <div class="stat-box warning">
+        <span>System Heat</span>
+        <strong>72°C</strong>
+      </div>
+      <div class="stat-box">
+        <span>CPU Load</span>
+        <strong>42%</strong>
+      </div>
+    </div>
+    <div class="note">This dashboard is designed for a modern ADAS monitoring experience with live GPU-powered visual telemetry.</div>
+  </div>
+</section>

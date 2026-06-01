@@ -1,24 +1,64 @@
 .dashboard-root {
+  display: flex;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(30, 120, 255, 0.08), transparent 25%),
+    radial-gradient(circle at bottom right, rgba(0, 255, 213, 0.08), transparent 18%),
+    linear-gradient(180deg, #060a14 0%, #04060c 100%);
+}
+
+.page-shell {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 .topbar {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:1rem 2rem;
-  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
-  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin: 1rem 1.5rem 0;
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.status-panel {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.status-pill,
+.status-badge {
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.status-pill {
+  background: rgba(0, 255, 213, 0.12);
+  color: #9cffee;
+}
+
+.status-badge {
+  background: rgba(95, 64, 255, 0.16);
+  color: #c7d1ff;
+}
+
+.content-shell {
+  margin: 1rem 1.5rem 1.5rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  min-height: calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .glass {
-  background: rgba(255,255,255,0.03);
-  backdrop-filter: blur(8px) saturate(140%);
-  border: 1px solid rgba(255,255,255,0.04);
-}
-
-.card {
-  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(18px) saturate(140%);
 }
