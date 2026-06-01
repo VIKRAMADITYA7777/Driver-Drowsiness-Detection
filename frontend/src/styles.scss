@@ -1,0 +1,13 @@
+@import './styles/_theme.scss';
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+  height: 100%;
+  background: radial-gradient(ellipse at center, #0f1724 0%, #05060a 100%);
+  color: #e6eef8;
+  font-family: Inter, Roboto, 'Segoe UI', sans-serif;
+}
+
+app-root {
+  display: block;
+}

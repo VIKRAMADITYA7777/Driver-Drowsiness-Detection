@@ -1,0 +1,13 @@
+// Dark futuristic theme variables
+$bg-gradient-start: #071226;
+$bg-gradient-end: #03040a;
+$glass: rgba(255,255,255,0.06);
+$accent: linear-gradient(90deg, #00ffd5 0%, #6b7cff 100%);
+
+:root {
+  --bg-start: #071226;
+  --bg-end: #03040a;
+  --glass: rgba(255,255,255,0.06);
+  --accent-start: #00ffd5;
+  --accent-end: #6b7cff;
+}
