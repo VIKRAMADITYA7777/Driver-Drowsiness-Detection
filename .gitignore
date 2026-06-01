@@ -24,3 +24,16 @@ Thumbs.db
 
 # Logs
 logs/
+
+# Environment
+.env
+
+# Local database
+backend.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Alembic versions
+backend/alembic/versions/

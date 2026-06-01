@@ -19,6 +19,24 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+## Database setup
+
+```powershell
+cd backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+copy .env.example .env
+python db_init.py
+```
+
+## Migrations
+
+```powershell
+cd backend
+alembic upgrade head
+```
+
 ## API
 
 - `GET /health`
