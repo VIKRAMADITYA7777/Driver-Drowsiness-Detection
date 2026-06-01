@@ -19,6 +19,13 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
+## Vision demo
+
+```powershell
+cd backend
+python vision_demo.py
+```
+
 ## Database setup
 
 ```powershell
@@ -54,3 +61,4 @@ alembic upgrade head
 - `app/crud.py` — basic database operations
 - `app/routes/` — API route modules
 - `app/logger.py` — structured logging
+- `app/vision/` — OpenCV + MediaPipe vision module

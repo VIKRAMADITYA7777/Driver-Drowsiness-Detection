@@ -32,6 +32,7 @@ logs/
 backend.db
 
 datasets/pipeline_output/
+backend/vision_output/
 
 # Python cache
 __pycache__/
