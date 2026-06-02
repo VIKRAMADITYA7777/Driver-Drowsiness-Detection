@@ -14,3 +14,12 @@ Use the CNN training script to build a drowsiness classification model from the 
   ```
 
 The trained model is saved as `models/cnn_drowsiness.h5`.
+
+## Inference
+
+Use the inference script to run live predictions with the trained CNN model.
+
+- `python models/infer_cnn.py` to open the default webcam
+- `python models/infer_cnn.py <video_path>` to run inference on a video file
+
+The inference code loads `models/cnn_drowsiness.h5` and overlays the predicted drowsiness class plus confidence.
