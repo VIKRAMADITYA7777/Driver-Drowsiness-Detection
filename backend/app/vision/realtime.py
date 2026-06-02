@@ -88,6 +88,19 @@ class RealTimeDetector:
                     )
                     crud.create_alert(self.db, alert_in)
 
+                    # Trigger external notifications (webhook, email, SMS placeholder)
+                    try:
+                        from app.notifications import send_alert
+                        send_alert(
+                            session_id=self.session.id,
+                            level=level,
+                            message=f"Real-time alert: {level} ({label})",
+                            metadata=message,
+                        )
+                    except Exception:
+                        # Don't let notification failures stop processing
+                        pass
+
                     self.last_alert_at = now
 
                 annotated = frame.copy()
