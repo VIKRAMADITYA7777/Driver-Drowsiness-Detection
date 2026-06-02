@@ -1,0 +1,10 @@
+<div class="analytics-panel">
+  <h3>Analytics</h3>
+  <table>
+    <tr *ngFor="let s of analytics">
+      <td>{{ s.metric }}</td>
+      <td><strong>{{ s.value }}</strong></td>
+      <td class="time">{{ s.collected_at }}</td>
+    </tr>
+  </table>
+</div>

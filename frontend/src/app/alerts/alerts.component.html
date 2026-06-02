@@ -1,0 +1,8 @@
+<div class="alerts-panel">
+  <h3>Recent Alerts</h3>
+  <ul>
+    <li *ngFor="let a of alerts">
+      <strong>{{ a.level }}</strong> — {{ a.message }} <span class="time">{{ a.created_at }}</span>
+    </li>
+  </ul>
+</div>

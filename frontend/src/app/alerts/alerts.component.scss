@@ -1,0 +1,16 @@
+.alerts-panel{
+  padding: 12px;
+}
+.alerts-panel ul{
+  list-style:none;
+  padding:0;
+}
+.alerts-panel li{
+  padding:6px 0;
+  border-bottom:1px solid rgba(255,255,255,0.04);
+}
+.alerts-panel .time{
+  float:right;
+  color:rgba(255,255,255,0.6);
+  font-size:0.85em;
+}
